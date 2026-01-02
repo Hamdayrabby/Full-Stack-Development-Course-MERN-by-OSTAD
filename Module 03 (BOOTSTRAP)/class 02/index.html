@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+<!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand"><img src="https://rabbil.com/build/assets/navlogo-cc5a3ac8.svg" alt="logo"></a>
+        </div>
+        <button class="navbar-toggler" data-bs-target="" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Form-->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="card shadow-lg rounded-3 p-5">
+                    <h4>Form</h4>
+                    <div>
+                        <label class="form-lebel">Email</label>
+                        <input class="form-control" placeholder="email" type="email">
+                    </div>
+                    <div>
+                        <label class="form-lebel">Range</label>
+                        <input class="form-range" placeholder="" max="100" min="0" type="range">
+                    </div>
+                    <div>
+                        <label class="form-label">Radio</label>
+                        <input class="form-check" type="radio">
+                    </div>
+                    <div>
+                        <label class="form-label">Checkbox</label>
+                        <input type="checkbox" class="form-check" max="100" min="0" type="checkbox">
+                    </div>
+                    <div>
+                        <label class="form-label">City</label>
+                        <select class="form-select">
+                            <option>Dhaka</option>
+                            <option>Rajshahi</option>
+                            <option>Rangpur</option>
+                            <option>Barishal</option>
+                        </select>
+                    </div>
+                    <button class="btn mt-3 btn-primary">Submit</button>
+                    <button class="btn mt-3 btn-danger">Submit</button>
+                    <button class="btn mt-3 btn-dark">Submit</button>
+                    <button class="btn mt-3 btn-warning">Submit</button>
+                    <button class="btn mt-3 btn-secondary">Submit</button>
+                    <button class="btn mt-3 btn-success">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Table-->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card p-4">
+                    <table class="table table-bordered table-dark table-hover">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--Alert-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="alert alert-danger">
+                    A simple alert
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <div class="alert alert-success">
+                    A simple alert
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <div class="alert alert-warning">
+                    A simple alert
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Modal-->
+    <button data-bs-target="#myModal" data-bs-toggle="modal" class="btn btn-success">Click</button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>My Modal</h1>
+                </div>
+                <div class="modal-body">
+                    <h1>This is Modal body</h1>
+                </div>
+                <div class="modal-footer">
+                    <h1>this is Modal footer</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--List-->
+    <ul class="list-group">
+        <li class="list-group-item">Item 1</li>
+        <li class="list-group-item">Item 2</li>
+        <li class="list-group-item">Item 3</li>
+        <li class="list-group-item">Item 4</li>
+        <li class="list-group-item">Item 5</li>
+        <li class="list-group-item">Item 6</li>
+    </ul>
+
+    
+
+    <SCRIPt src="./js/bootstrap.bundle.js"></SCRIPt>
+</body>
+</html>

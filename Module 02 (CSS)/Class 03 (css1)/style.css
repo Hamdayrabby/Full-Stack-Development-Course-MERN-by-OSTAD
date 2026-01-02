@@ -1,0 +1,47 @@
+/*Tag selector*/
+h1,h2,p{
+    color: rgb(2, 2, 2);
+    border: 1px solid rgb(65, 253, 8);
+    padding: 10px;
+    background-color: yellow;
+} 
+
+/*ID Selector use once*/
+#my_text{
+    color: rgb(213, 213, 218);
+}
+
+/*Class Selector use as many as u want*/
+.my_text{
+    color: rgb(15, 15, 15);
+}
+
+/*Background image*/
+
+body{
+    background-image: url("./vecteezy_abstract-blue-background-simple-design-for-your-website_6852804.jpg");
+    background-size: cover;
+}
+
+.btn{
+    border: 1px solid rgb(240, 240, 91) ;
+    border-radius: 5px ;
+    background-color: rgb(255, 255, 255);
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    cursor:grab;
+    float: center;
+}
+
+/*বাটনে মাউস নিয়ে গেলে কালার কিংবা অন্য কিছু চেঞ্জ হবে*/
+
+.btn:hover{
+    background-color: rgb(201, 201, 153);
+}
+
+.my-section{
+    display: inline-grid;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="MyEvent('Load hoyeche')">
+
+    <button onclick="objAlert()">Alert</button>
+    <button onclick="objConfirm()">Confirm</button>
+    <button onclick="objPrompt()">Prompt</button>
+    <button onclick="objOpen()">Open</button>
+    <button onclick="objClose()">Close</button>
+
+    <input onchange="MyEvent('change hoyeche')"><br>
+    <input onkeydown="MyEvent('key down hoyeche')"><br>
+    <input onkeyup="MyEvent('key up hoyeche')"><br>
+
+
+    <button onclick="MyEvent('Click hoyeche')">Click</button>
+    <button onmouseover="MyEvent('mouse over hoyeche')">mouse over</button>
+    <button onmouseout="MyEvent('mouse out hoyeche')">mouse out</button>
+    <script>
+        function objAlert()
+        {
+            alert("Save Success");
+        }
+        function objConfirm()
+        {
+            let result=confirm("Do you want to Delete");
+            document.write(result);
+        }
+        function objPrompt()
+        {
+            let r= prompt("Write your name");
+            document.write(r);
+        }
+        function objOpen()
+        {
+            open();
+        }
+        function objClose()
+        {
+            close();
+        }
+        // setTimeout(function(){
+        //     alert("Alert after 5 sec")
+        // },5000
+    // )
+
+    var appCodeName=navigator.appCodeName;
+    var appName=navigator.appName;
+    var appVersion=navigator.appVersion;
+    var cookieEnabled=navigator.cookieEnabled;
+    var language=navigator.language;
+    var userAgent=navigator.userAgent;
+    var platform=navigator.platform;
+
+    document.write("<br>"+appCodeName+"<br>");
+    document.write(appName+"<br>");
+    document.write(appVersion+"<br>");
+    document.write(cookieEnabled+"<br>");
+    document.write(language+"<br>");
+    document.write(userAgent+"<br>");
+    document.write(platform+"<br>");
+    
+    navigator.geolocation.getCurrentPosition(function(position){
+    
+    let altitude=position.coords.altitude;
+    let latitude=position.coords.latitude;
+    let longitude=position.coords.longitude;
+    let speed=position.coords.speed;
+    
+    document.write("altitude: "+ altitude+"<br>");
+    document.write("latitude: "+ latitude+"<br>");
+    document.write("longitude: "+ longitude+"<br>");
+    document.write("speed: "+ speed+"<br>");
+    })
+
+    function MyEvent(msg){
+        console.log(msg)
+    }
+    </script>
+</body>
+</html>

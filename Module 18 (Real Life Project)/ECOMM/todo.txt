@@ -1,0 +1,8 @@
+npm init -y
+npm install express dotenv
+npm install helmet express-mongo-sanitize xss-clean hpp 
+npm install cors cookie-parser
+npm install express-rate-limit
+npm install mongoose jsonwebtoken
+npm install axios form-data nodemailer
+npm install --save-dev nodemon

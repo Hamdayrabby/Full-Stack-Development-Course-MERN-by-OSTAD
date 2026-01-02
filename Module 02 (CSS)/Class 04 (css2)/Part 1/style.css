@@ -1,0 +1,54 @@
+:root{
+    --bg-color:green;
+    --padding-btn:20px;
+}
+.btn1{
+    background-color: var(--bg-color);
+    padding: var(--padding-btn);
+}
+
+.btn{
+    background-color: blue;
+    color: white;
+    padding: var(--padding-btn)!important
+    
+}
+.btn:hover{
+    background-color: green;
+}
+.my_text{
+    font-family: "Sixtyfour Convergence", sans-serif;
+    color: var(--bg-color);
+    text-decoration:double;
+    word-spacing: 10px;
+    letter-spacing: .5px;
+}
+
+
+/*overflow scroll*/
+.my_div{
+    line-height: 180%;
+    height: 200px;
+    width: 200px;
+    overflow: scroll;
+}
+
+.my_img2{
+    filter:grayscale(00%) !important
+}
+
+
+.my_img{
+    filter:grayscale(100%);
+}
+
+/*padding and margin*/
+/*মার্জিন বাইরের থেকে মার্জিন করে মানে স্পেস রাখে,
+আর প্যাডিং ভিতর থেকে স্পেস ক্রিয়েট করে*/
+
+.btn{
+    margin: 50px;
+    padding: 40px;
+}
+
+

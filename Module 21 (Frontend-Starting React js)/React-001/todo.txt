@@ -1,0 +1,12 @@
+Starting with a react project
+- npm create vite@latest
+
+[-Project name:
+- Framework => variant]
+
+- npm i
+
+- Cleaning the default files
+
+How to run React project
+- npm run dev

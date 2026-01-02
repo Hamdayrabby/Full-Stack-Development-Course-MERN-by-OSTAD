@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/milligram.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create New Product</h2>
+            <br><br>
+        <div class="row">
+            <div class="column">
+                <label for="ProductName">Product Name</label>
+                <input type="text" id="ProductName" placeholder="Product Name">
+                <label for="ProductName">Product Code</label>
+                <input type="text" id="ProductCode" placeholder="Product Code">
+                <label for="ProductName">Product Image</label>
+                <input type="text" id="ProductImg" placeholder="Product Image">
+                <label for="ProductName">Unit Price</label>
+                <input type="text" id="UnitPrice" placeholder="Unit Price">
+                <label for="ProductName">Product Qty</label>
+                <input type="text" id="ProductQty" placeholder="Product Qty">
+                <label for="ProductName">Product Total</label>
+                <input type="text" id="ProductTotal" placeholder="Product Total">
+
+                <button onclick="CreateData()">Submit</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        async function CreateData() {
+            let ProductName = document.getElementById('ProductName').value;
+            let ProductCode = document.getElementById('ProductCode').value;
+            let ProductImg = document.getElementById('ProductImg').value;
+            let UnitPrice = document.getElementById('UnitPrice').value;
+            let ProductQty = document.getElementById('ProductQty').value;
+            let ProductTotal = document.getElementById('ProductTotal').value;
+
+            let URL = "https://crud.teamrabbil.com/api/v1/CreateProduct";
+            let dataObj={
+                img:ProductImg,
+                ProductCode:ProductCode,
+                ProductName:ProductName,
+                Qty:ProductQty,
+                TotalPrice:ProductTotal,
+                UnitPrice:UnitPrice
+            }
+            
+            await axios.post(URL,dataObj)
+
+            window.location = "index.html";
+        }
+    </script>
+
+    <script src="./js/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <h1 id="MyId"></h1>
+    <h6 class="MyClass"></h6>
+    <button class="MyClass"></button>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+
+    <button onclick="Demo()">Click</button>
+    <button onclick="Demo1()">Click</button>
+    <button onclick="Demo2()">Click</button><br><br>
+
+
+    <input id="num1"><br><br>
+    <input id="num2"><br><br>
+    <button onclick="Demo3()">Click</button><br><br>
+
+    <h1 id="MyID" class="">Bangladesh</h1>
+    <button onclick="Addstyle()">Add Style</button>
+    <button onclick="Removestyle()">Remove Style</button><br><br>
+
+    <ul id="MyItems"></ul><br><br>
+    <input id="MyInput"><br><br>
+    <button onclick="AddItem()">Add</button>
+
+    <br><br><img height="140" width="120" id="MyImg" src="https://rabbil.com/files/rabbilVai.webp">
+    <br><br><button onclick="ChangeAttr()">Change</button>
+
+
+    <script>
+        var MyElement = document.getElementById('MyId');
+        MyElement.innerHTML="Eid Mubarak";
+        var MyElements = document.getElementsByClassName('MyClass');
+        MyElements[1].innerHTML="Eid Mubarak";
+
+        function Demo()
+        {
+            var info=document.URL;
+            document.getElementsByTagName('p')[0].innerHTML=info;
+        }
+        function Demo1()
+        {
+            let w= window.open();
+            w.document.open();
+            w.document.write("Hello new window");
+            w.document.close();
+        }
+        function Demo2()
+        {
+            let MyItems = document.getElementsByTagName('p');
+            let ItemCount=MyItems.length;
+            alert(ItemCount);
+        }
+        function Demo3()
+        {
+            let num1=document.getElementById('num1').value;
+            let num2=document.getElementById('num2').value;
+
+            let r= parseFloat(num1)+parseFloat(num2);
+            alert(r);
+        }
+        function Addstyle()
+        {
+            let h1tag=document.getElementById('MyID');
+            h1tag.classList.add('text-primary');
+        }
+        function Removestyle()
+        {
+            let h1tag=document.getElementById('MyID');
+            h1tag.classList.remove('text-primary');
+        }
+        function AddItem()
+        {
+            var itemValue=document.getElementById('MyInput').value;
+            var listItem=document.createElement('li');
+            listItem.innerHTML=itemValue;
+            var MyItems=document.getElementById('MyItems');
+            MyItems.appendChild(listItem);
+        }
+
+        function ChangeAttr()
+        {
+            var MyImg=document.getElementById('MyImg');
+            //MyImg.src="";
+            MyImg.height="150";
+            MyImg.width="150";
+        }
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

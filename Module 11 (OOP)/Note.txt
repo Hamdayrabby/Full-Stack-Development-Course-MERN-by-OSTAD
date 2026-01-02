@@ -1,0 +1,17 @@
+4 pillar of OOP
+
+- Abstraction: we don't show the complex work that is done behind the scene. hide the information how a data stored in a system.
+    ex: How a user login in a website. we don't show the process
+
+- Encapsulation: It encapsulate multiple data. 
+    ex: A Object contain name, email and had a function which check how many movie he subscribe. this function will use name and email stored in the object.
+    the way it binds these components is called encapsulation. encapsulation ensures Abstraction.
+
+- Inheritance: Inherit one object data to another object, can use data of another object.
+
+- Polymorphism: One object can use another object function in different way
+
+
+
+# class: It is a blue print to create a object.
+

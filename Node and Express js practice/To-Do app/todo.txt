@@ -1,0 +1,5 @@
+
+--Packages need to be installed
+
+
+yarn add express cookie-parser cors express-rate-limit helmet hpp jsonwebtoken mongoose nodemailer express-fileupload

@@ -1,0 +1,72 @@
+1. Node is initiate
+2. Package.json
+3. Express js backend with packages
+    - yarn add express/ npm i express: Install express js. If we install with yarn. It will be secured.
+    - yarn add cookie-parser: 
+	Purpose: Helps you work with cookies in your Express.js application.
+	How it works: Allows you to easily access and set cookies in the req and res objects.
+    - yarn add cors:
+	Purpose: Enables Cross-Origin Resource Sharing (CORS).
+	How it works: Allows your server to accept requests from different origins (e.g., different domains or ports). This is crucial for modern web applications that often interact with front-ends hosted on different servers.
+    - yarn add express-rate-limit:
+	Purpose: Limits the number of requests that can be made to your server within a specific time frame.
+	How it works: Helps prevent abuse, such as denial-of-service attacks, by restricting the rate at which clients can make requests to your API.
+    - yarn add helmet:
+	Purpose: Provides security headers for your Express.js app.
+	How it works: Helps protect your application from common web vulnerabilities like XSS, clickjacking, and more by setting appropriate security headers in the HTTP responses.
+    - yarn add hpp:
+	Purpose: Helps prevent HTTP Parameter Pollution attacks.
+	How it works: Prevents malicious requests that exploit multiple occurrences of the same parameter in the query string.
+    - yarn add jsonwebtoken:
+	Purpose: Creates and verifies JSON Web Tokens (JWTs). If we send data through this token data will be encripted.
+	How it works: Enables you to implement authentication and authorization in your application by generating and verifying JWTs to authenticate users.
+    - yarn add mongoose:
+	Purpose: Provides an Object Data Modeling (ODM) library for MongoDB.
+	How it works: Makes it easier to interact with MongoDB by providing a schema-based way to model your data and perform database operations.
+    - yarn add nodemailer:
+	Purpose: Enables sending emails from your Node.js application.
+	How it works: Provides an easy-to-use interface for sending emails with attachments, HTML formatting, and more.
+    - yarn add nodemon:
+	Purpose: Automatically restarts your server whenever you make changes to your code.
+	How it works: Watches for file changes in your project and restarts the server, saving you time during development.
+    - yarn add express-fileupload:
+	
+
+4. File Folder Structure
+    - config
+    - controllers
+    - middlewares
+    - models
+    - utility
+    - routes
+    - api routing
+
+
+5. app.js
+   - import applications all packages
+   - Global Application Middleware
+   - Rate Limiter
+   - Web Caching
+   - MongoDB connection
+   - Set API Routes
+   - Run Your Express Back End Project
+
+
+6. Set Debugging
+
+---------------------------------------------------------
+
+7. How to works with request params & query
+        - url params
+        - query string
+
+8. How to works with request JSON Body
+
+
+9. How to works with request Form Data File
+
+
+10. Request Header Properties
+
+11. Understanding  Route Middleware & Application Middleware
+

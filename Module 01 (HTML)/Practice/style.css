@@ -1,0 +1,56 @@
+.p1{
+    font-size: 40px;
+    font-variant:inherit;
+    font-weight: 900;
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.btn{
+    background-color: red;
+    border-radius: 6px;
+    color: white;
+    padding: 30px;
+}
+
+.btn:hover{
+    background-color: blue;
+}
+
+.p2{
+    line-height: 110%;
+    margin:10px 30px 200px 100px;
+
+}
+
+/*Overflow*/
+.p3{
+    height: 200px;
+    width: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.a,div.b{
+    width: 150px;
+    border: 2px solid red;
+    
+}
+
+
+/*It will wrap up the word and break (break-word) it in another line*/
+div.a{
+    word-wrap: break-word;
+}
+
+div.b{
+    word-wrap: normal;
+}
+
+/*justify content*/
+
+.test{
+    display: flex;
+    justify-content: center;
+}

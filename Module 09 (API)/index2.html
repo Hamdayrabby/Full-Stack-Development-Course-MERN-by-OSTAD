@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ProductName" placeholder="Product Name" required>
+    <br><br>
+       <input type="text" id="ProductCode" placeholder="Product Code" required>
+       <br><br>
+       <input type="number" id="Qty" placeholder="Quantity" required>
+       <br><br>
+       <input type="number" id="UnitPrice" placeholder="Unit Price" required>
+       <br><br>
+       <button onclick="sendDataToBackend()">Create Product</button>
+       <pre id="output"></pre>
+
+       <script>
+            async function sendDataToBackend() {
+                const body = {
+                    Img:"",
+                    ProductName: document.getElementById('ProductName').value,
+                    ProductCode: document.getElementById('ProductCode').value,
+                    Qty: document.getElementById('Qty').value,
+                    TotalPrice:"",
+                    UnitPrice: document.getElementById('UnitPrice').value
+                }
+                console.log(body);
+                const response = await fetch("https://crud.teamrabbil.com/api/v1/CreateProduct", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(body)
+                });
+                const data = await response.json();
+                console.log(data);
+            }
+       </script>
+</body>
+</html>

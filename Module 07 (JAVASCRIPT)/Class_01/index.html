@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HI</h1>
+    <script>
+
+
+        document.write("Hello"+"<br>");
+
+        function add(a, b) {
+            console.log(a+b + "\n");
+        }
+        add(1, 2);
+
+        //Object
+
+        var MYPC={
+            brand: "hp",
+            screen: "15.6",
+            islaptop:true,
+            ram:"8 GB",
+            isSSD:true,
+            processor: "Core i-5"
+
+        }
+        document.write(MYPC["brand"]+"<br>");
+
+        var category=["apple", "orange", "banana", "mango"];
+        var i;
+        for(i=0;i<category.length;i++)
+        {
+            document.write(category[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

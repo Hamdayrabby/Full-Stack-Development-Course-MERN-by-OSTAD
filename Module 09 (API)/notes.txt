@@ -1,0 +1,5 @@
+1.javascript is a synchronize programming language
+
+2. javascript is a single threaded language
+
+3. But it also has  asynchronous behavior

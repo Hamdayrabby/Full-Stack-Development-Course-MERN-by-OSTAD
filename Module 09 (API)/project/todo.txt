@@ -1,0 +1,5 @@
+1. Understand the project first
+2. Do the read operation
+3. Do the Delete operation
+4. Do the create operation
+5. Do the update operation

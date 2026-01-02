@@ -1,0 +1,16 @@
+1. What is responsive design?
+2. What is adaptive design?
+3. When to use responsive design example.
+4. When to use adaptive design example.
+5. Responsive Design using bootstrap.
+            - extra large(xl) 4k
+            - large (lg) 2k screen
+            - medium (md) laptop
+            - small (sm) 7,8 tab
+            - too small   auto responsive
+6. Responsive design using media query.
+
+
+7. Way of use case
+    - Grid layout responsive using sm,lg,xl,md container, row, column
+    - media query content image,text,video,background image

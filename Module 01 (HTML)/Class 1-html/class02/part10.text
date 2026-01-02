@@ -1,0 +1,9 @@
+! or html:5: Basic HTML5 template.
+a: Creates an <a href=""></a> tag.
+p: Generates a <p></p> paragraph tag.
+img: Produces an <img src="" alt=""> tag.
+ul>li: Creates a list, can be combined with * for multiple items.
+table>tr>td: Generates a table structure.
+input:checkbox: Creates a checkbox input.
+form:post: Generates a form with the method set to POST.
+br: Inserts a line break.

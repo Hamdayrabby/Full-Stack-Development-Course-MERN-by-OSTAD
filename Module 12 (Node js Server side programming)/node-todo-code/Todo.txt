@@ -1,0 +1,35 @@
+              ToDo App With Node JS Project
+
+
+1. npm init -y
+2. node --watch app.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. Auto Restart Server
+
+
+2. on listens specific events on req, res objects. Like data, end, error
+req.on('data') listens for incoming data.
+req.on('end') processes it when finished.
+
+res.writeHead() prepares the response.
+res.end() sends the final output.

@@ -1,0 +1,150 @@
+:root{
+--blue:#0d1224;
+}
+body{
+    background-color:var(--blue);
+    color: white;
+}
+
+.section{
+    padding: 40px;
+}
+.text-sm {
+    font-size: .875rem !important;
+    line-height: 1.5;
+}
+p, label, button, h1, h2, h3, h4, h5, h6 {
+    font-family: Hind Siliguri, sans-serif !important;
+}
+p {
+    line-height: 1.625;
+    font-weight: 400;
+}
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4F308F #0D1224;
+}
+.h-auto {
+    height: auto !important;
+}
+.rounded-2 {
+    border-radius: .375rem !important;
+}
+p, label, button, h1, h2, h3, h4, h5, h6 {
+    font-family: Hind Siliguri, sans-serif !important;
+}
+p, .p {
+    font-size: 1rem;
+}
+
+
+.mx-2 {
+    margin-right: .5rem !important;
+    margin-left: .5rem !important;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+    --bs-btn-padding-y: .5rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: .75rem;
+    --bs-btn-border-radius: .5rem;
+}
+.text-light {
+    color: #e9ecef !important;
+}
+.bg-card{
+    background-color: #11172e;
+    color: white;
+    box-shadow:0px 0px 2px #e9ecef;
+    border: .1px solid rgb(48, 58, 143);
+    border-radius: 5px;
+}
+.form-bg{
+    background-color: #afb2be;
+    color: white;
+    box-shadow:0px 0px 2px #e9ecef;
+    border: .1px solid rgb(48, 58, 143);
+    border-radius: 5px;
+}
+.card-section{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.icon-shape{
+    justify-content: space-between;
+}
+.logo{
+    width:153px;
+}
+.card-col{
+    display: flex;
+}
+.quote{
+    font-weight: 900 !important;
+    color: #4F308F;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 80px;
+    height: 80px;
+    
+}
+.card {
+    background-color: #11152c !important;
+    box-shadow: 0 0 3px #905dfd80 !important;
+    -webkit-transition: box-shadow ease-in-out .25s;
+    transition: box-shadow ease-in-out .25s;
+}
+
+.span{
+    color: #f926ae;
+}
+
+textarea.form-control, textarea.form-control-sm, textarea.form-control-lg {
+    min-height: unset;
+}
+
+.imgg{
+    padding-left: 100px !important;
+    width: 450px;
+    
+}
+
+.btn-down{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+    
+}
+
+.btn-in{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+.btn-text{
+    padding-left: 10px;
+    padding-right: 60px;
+    margin-bottom: 0;
+}
+
+.footer-m {
+    margin-top: 75vh;
+}
+.bg-c{
+    background-color:var(--blue)   ;
+}
+::placeholder{
+    color: rgb(124, 113, 113) !important;
+}

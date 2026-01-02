@@ -1,0 +1,206 @@
+/* .navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    z-index: 1;
+    font-size: 85%;
+    font-weight: 550;
+    font-family: sans-serif;
+}
+
+/* Navbar items */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem; /* Adjusts spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    color: rgb(48, 66, 84);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+} */
+
+/* Hover effect for links */
+.navbar a:hover {
+    color: #007BFF;
+} 
+body{
+    background-color: rgb(32, 205, 141);
+    font-family: Arial, sans-serif;
+}
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logo::before {
+    content: '|';
+    color: black;
+}
+.logo-txt{
+    font-family: Arial, sans-serif;
+    font-size: 28px !important;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px !important;
+}
+
+.badge{
+    background-color: #1a1a1a; /* Black background */
+    color: rgb(32, 205, 141);
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 80px; /* Rounded corners */
+}
+
+
+.card-custom {
+    background-color: #f5f5f5;
+    padding: 30px;
+    padding-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+}
+
+.state p{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product{
+    background-color: black;
+    width: 100%;
+}
+.plogo::before {
+    content: '|';
+    color:  rgb(16, 112, 77);
+    font-size: 40px;
+}
+.plogo-txt{
+    font-family: Arial, sans-serif;
+    font-size: 20px !important;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 10px !important;
+    margin-left: 10px;
+}
+
+.icon{
+    font-size: 92px;
+}
+.state1{
+    
+    height: 361px;
+    border-radius: 30px;
+    background-color: rgb(237, 235, 231);
+}
+
+.testimonial-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.testimonial-card img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+.testimonial-card p {
+    color: #555;
+    font-size: 14px;
+}
+.testimonial-card h5 {
+    color: #2dcc94;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.testimonial-card h5::before {
+    content: '|';
+    color: #2dcc94;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.badge2{
+    color: #1a1a1a; /* Black background */
+    background-color: rgb(32, 205, 141);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    /* width: 187px; */
+    height: 38px;
+    text-align: center;
+    /* margin-left: 118px; */
+    margin-top: 20px;
+    padding-top: 5px;
+    border-radius: 80px;
+    display: inline-block; /* Rounded corners */
+}
+.badge3{
+    color: #1a1a1a; /* Black background */
+    background-color: rgb(32, 205, 141);
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    /* width: 250px; */
+    height: 38px;
+    text-align: center;
+    /* margin-left: 98px; */
+    margin-top: 20px;
+    padding-top: 5px;
+    border-radius: 80px;
+    display: inline-block; /* Rounded corners */
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+.social-icons a {
+    background-color: #2dcc94; /* Green background for icons */
+    color: #18272D; /* Dark icon color */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+.footer-container {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+}
