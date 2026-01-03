@@ -1,12 +1,63 @@
-Starting with a react project
-- npm create vite@latest
+PROJECT: React-001 Setup & Basic Development Flow
 
-[-Project name:
-- Framework => variant]
+1. INITIAL SETUP
+   [x] Install Node.js (Prerequisite)
+   [x] Create Vite Project
+       Command: npm create vite@latest React-001 -- --template react
+   [x] Navigate to Project Directory
+       Command: cd React-001
+   [x] Install Dependencies
+       Command: npm install
+   [x] Start Development Server
+       Command: npm run dev
 
-- npm i
+2. PROJECT STRUCTURE & CLEANUP
+   [x] Understand Folder Structure
+   [x] Clean up default App.jsx content
+   [x] Clean up default CSS (index.css, App.css)
 
-- Cleaning the default files
+3. COMPONENT BASICS
+   [ ] Create Components Directory
+       Command: mkdir src/components
+   [ ] Create First Component (ProductCard.jsx)
+       - Create file: src/components/ProductCard.jsx
+       - Add boilerplate functional component code
+   [ ] Use Component in App.jsx
+       - Import component at the top
+       - Render <ProductCard /> in JSX
 
-How to run React project
-- npm run dev
+4. JSX & DYNAMIC CONTENT
+   [ ] Use JavaScript Variables in JSX
+       - Example: {name}
+   [ ] Implement Conditional Rendering
+       - ternary operator (condition ? true : false)
+       - && operator (condition && output)
+   [ ] Render Lists using .map()
+       - Loop through an array and return JSX elements
+   [ ] Use Inline Styles
+       - style={{ color: "red" }}
+   [ ] Use CSS Classes
+       - className="my-class"
+
+5. PROPS & DATA PASSING (Recommended Next Steps)
+   [ ] Pass data to ProductCard
+       - <ProductCard title="Laptop" price="500" />
+   [ ] Receive props in ProductCard
+       - const ProductCard = (props) => { ... }
+
+6. INTERACTIVITY
+   [ ] Add Event Listeners
+       - onClick, onChange
+   [ ] Manage State with useState Hook
+       - import { useState } from 'react'
+       - const [count, setCount] = useState(0)
+
+7. FINAL BUILD
+   [ ] Create Production Build
+       Command: npm run build
+   [ ] Preview Build
+       Command: npm run preview
+   [] Run the project
+       Command: npm run dev
+
+       
